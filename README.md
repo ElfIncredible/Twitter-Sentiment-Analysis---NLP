@@ -1,4 +1,4 @@
-# Twitter Sentiment-Analysis - NLP
+# Twitter Sentiment Analysis - NLP
 The goal is to use NLP to understand and interpret human sentiments on social media platforms(in this case Twitter or X)
 
 This is the sentiment140 dataset. It contains 1,600,000 tweets extracted using the twitter api . The tweets have been annotated (0 = negative, 4 = positive) and they can be used to detect sentiment .
