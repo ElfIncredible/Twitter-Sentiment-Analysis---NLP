@@ -6,6 +6,7 @@ This initiative aims to analyze and interpret the sentiments expressed in tweets
 - [Dataset](#dataset)
 - [Natural Language Processing](#natural-language-processing)
   - [Install Dependencies](#install-dependencies)
+  - [Data collection and Processing](#data-collection-and-processing)
 
 ## Project Overview
 **Goals:**
