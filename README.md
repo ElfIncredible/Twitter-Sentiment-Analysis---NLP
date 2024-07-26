@@ -8,6 +8,8 @@ This initiative aims to analyze and interpret the sentiments expressed in tweets
   - [Install Dependencies](#install-dependencies)
   - [Data collection and Processing](#data-collection-and-processing)
   - [Stemming](#stemming)
+  - [Separating feature and target](#separating-feature-and-target)
+  - [Split the data Train and Test data](#split-the-data-train-and-test-data)
 
 ## Project Overview
 **Goals:**
@@ -67,3 +69,8 @@ Perform the following tasks:
 ### Stemming
 - Define a stemming function to preprocess text by removing non-alphabetic characters, converting to lowercase, splitting into words, removing stopwords, stemming the words, and joining them back into a single string.
 - Apply this function to the 'text' column of the DataFrame, creating a new column 'stemmed content' with the processed text.
+
+### Separating feature and target
+Prepare the data for machine learning by separating the features (input variables) from the target variable (output variable). The characteristics X include all of the necessary information required to make predictions, whereas y holds the values that the model intends to forecast. This division is a typical strategy in machine learning to help with model training and evaluation.
+
+### Split the data Train and Test data
