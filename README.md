@@ -10,6 +10,7 @@ This initiative aims to analyze and interpret the sentiments expressed in tweets
   - [Stemming](#stemming)
   - [Separating feature and target](#separating-feature-and-target)
   - [Split the data Train and Test data](#split-the-data-train-and-test-data)
+  - [Convert textual data to numerical](#convert-textual-data-to-numerical)
 
 ## Project Overview
 **Goals:**
@@ -74,3 +75,10 @@ Perform the following tasks:
 Prepare the data for machine learning by separating the features (input variables) from the target variable (output variable). The characteristics X include all of the necessary information required to make predictions, whereas y holds the values that the model intends to forecast. This division is a typical strategy in machine learning to help with model training and evaluation.
 
 ### Split the data Train and Test data
+Split the stemmed text data and sentiment labels into training and testing sets, with 70% of the data used for training and 30% for testing, while maintaining the original distribution of sentiment labels in both sets for balanced and effective model training and evaluation.
+
+### Convert textual data to numerical
+This process ensures that both training and testing data are converted into a compatible numerical format for use in machine learning models.
+- *TfidfVectorizer* is used to convert text data into numerical features.
+- *fit_transform(X_train):* Learns the vocabulary and IDF values from the training data and transforms it into TF-IDF features.
+- *transform(X_test):* Transforms the testing data into TF-IDF features using the same vocabulary and IDF values learned from the training data.
