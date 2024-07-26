@@ -4,6 +4,8 @@ This initiative aims to analyze and interpret the sentiments expressed in tweets
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
+- [Natural Language Processing](#natural-language-processing)
+  - [Install Dependencies](#install-dependencies)
 
 ## Project Overview
 **Goals:**
@@ -48,3 +50,6 @@ It contains the following 6 fields:
 - *user:* the user that tweeted
 
 - *text:* the text of the tweet
+
+## Natural Language Processing
+### Install Dependencies
