@@ -109,11 +109,11 @@ Comparing these two metrics helps identify issues like overfitting or underfitti
 Save the trained logistic regression model to a file using pickle. This is useful for preserving the model so it can be loaded and used later without needing to retrain it. The saved model can be deployed or shared for future use.
 
 ### Using the saved model for predictions
-**Loading the Model:** 
+*Loading the Model:* 
 
 The model is loaded using pickle.
 
-**Prediction and Evaluation:**
+*Prediction and Evaluation:*
 
 - Predictions are made using the loaded model (loaded).
 - For each test instance, the code prints the actual label, makes a prediction, and prints whether the prediction indicates a "Negative Tweet" or "Positive Tweet."
