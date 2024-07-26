@@ -7,6 +7,7 @@ This initiative aims to analyze and interpret the sentiments expressed in tweets
 - [Natural Language Processing](#natural-language-processing)
   - [Install Dependencies](#install-dependencies)
   - [Data collection and Processing](#data-collection-and-processing)
+  - [Stemming](#stemming)
 
 ## Project Overview
 **Goals:**
@@ -62,3 +63,7 @@ Perform the following tasks:
 - Load a dataset from a CSV file and assign column names.
 - Check the shape and missing values of the dataset.
 - Analyze and update the distribution of the target sentiment labels.
+
+### Stemming
+- Define a stemming function to preprocess text by removing non-alphabetic characters, converting to lowercase, splitting into words, removing stopwords, stemming the words, and joining them back into a single string.
+- Apply this function to the 'text' column of the DataFrame, creating a new column 'stemmed content' with the processed text.
