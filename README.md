@@ -53,3 +53,11 @@ It contains the following 6 fields:
 
 ## Natural Language Processing
 ### Install Dependencies
+Provide a pipeline for performing sentiment analysis on text data using machine learning. It involves preprocessing the text data, extracting features, training a Logistic Regression model, and evaluating its performance.
+### Data collection and Processing
+Perform the following tasks:
+
+- Download and print common English stopwords.
+- Load a dataset from a CSV file and assign column names.
+- Check the shape and missing values of the dataset.
+- Analyze and update the distribution of the target sentiment labels.
