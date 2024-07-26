@@ -11,6 +11,10 @@ This initiative aims to analyze and interpret the sentiments expressed in tweets
   - [Separating feature and target](#separating-feature-and-target)
   - [Split the data Train and Test data](#split-the-data-train-and-test-data)
   - [Convert textual data to numerical](#convert-textual-data-to-numerical)
+  - [Model training - Logistic Regression](#model-training---logistic-regression)
+  - [Model evaluation - Accuracy score](model-evaluation---accuracy-score)
+  - [Saving the trained model](#saving-the-trained-model)
+  - [Using the saved model for predictions](#using-the-saved-model-for-predictions)
 
 ## Project Overview
 **Goals:**
@@ -82,3 +86,34 @@ This process ensures that both training and testing data are converted into a co
 - *TfidfVectorizer* is used to convert text data into numerical features.
 - *fit_transform(X_train):* Learns the vocabulary and IDF values from the training data and transforms it into TF-IDF features.
 - *transform(X_test):* Transforms the testing data into TF-IDF features using the same vocabulary and IDF values learned from the training data.
+
+### Model training - Logistic Regression
+- *LogisticRegression(max_iter=1000):* Initializes the logistic regression model with a maximum of 1000 iterations for optimization.
+- *lr.fit(X_train, y_train):* Trains the model on the training data, adjusting the model parameters to best fit the training features and labels.
+
+### Model evaluation - Accuracy score
+**Training Data Accuracy:**
+
+- Measures how well the model fits the training data.
+- High accuracy here might suggest that the model has learned well from the training data. However, it could also indicate overfitting if the accuracy is significantly higher than on the testing data.
+
+**Testing Data Accuracy:**
+
+- Measures how well the model performs on unseen data.
+- This is a more reliable indicator of the model's ability to generalize to new data. A high testing accuracy implies that the model is likely to perform well on real-world data, not just the data it was trained on.
+
+Training accuracy evaluates the model's fit to the training data, while testing accuracy assesses the model's performance on new data.
+Comparing these two metrics helps identify issues like overfitting or underfitting and provides insights into the model's robustness and generalization capabilities.
+
+### Saving the trained model
+Save the trained logistic regression model to a file using pickle. This is useful for preserving the model so it can be loaded and used later without needing to retrain it. The saved model can be deployed or shared for future use.
+
+### Using the saved model for predictions
+**Loading the Model:** 
+
+The model is loaded using pickle.
+
+**Prediction and Evaluation:**
+
+- Predictions are made using the loaded model (loaded).
+- For each test instance, the code prints the actual label, makes a prediction, and prints whether the prediction indicates a "Negative Tweet" or "Positive Tweet."
